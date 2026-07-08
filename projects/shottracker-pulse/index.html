@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShotTracker Pulse | Paula Manrique</title>
+    <meta
+      name="description"
+      content="A product design case study for ShotTracker Pulse, a real-time game analytics iPad experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,70&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="project-detail">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">Paula Manrique</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/paulamanriquer/" target="_blank" rel="noreferrer" aria-label="Paula Manrique on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.55C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
+        </svg>
+      </a>
+    </header>
+
+    <main>
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="../../index.html#selected-work">← Back to selected work</a>
+      </nav>
+      <section class="case-hero">
+        <img
+          src="../../assets/projects/pulse-hero.png"
+          alt="ShotTracker Pulse hero with iPad dashboards"
+        />
+      </section>
+
+      <section class="case-content case-intro" aria-labelledby="case-title">
+        <p class="meta">
+          <span>Sports Tech</span><span>iPad</span><span>2025</span>
+        </p>
+        <h1 id="case-title">ShotTracker Pulse</h1>
+        <p class="case-lede">
+          A more accessible game-day product in the ShotTracker ecosystem,
+          designed to help new programs get value quickly with bench-ready video
+          and stats, while creating a natural path toward the fuller Helix
+          experience.
+        </p>
+
+        <dl class="quick-stats">
+          <div>
+            <dt>Role</dt>
+            <dd>Lead designer</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Product strategy • UI/UX • Rebrand</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>iOS iPad</dd>
+          </div>
+          <div>
+            <dt>Company</dt>
+            <dd>ShotTracker/DD Sports</dd>
+          </div>
+        </dl>
+
+        <section class="case-section">
+          <p class="case-kicker">Design Challenge</p>
+          <div class="challenge-grid">
+            <article>
+              <p class="step">01</p>
+              <h2>Accessible entry point</h2>
+              <p>
+                Pulse needed to feel valuable on its own for schools with
+                smaller budgets, while still introducing them to the broader
+                ShotTracker ecosystem.
+              </p>
+            </article>
+            <article>
+              <p class="step">02</p>
+              <h2>Lower-friction workflow</h2>
+              <p>
+                Coaches needed faster access to video, stats, and game context
+                without the installation effort or workflow depth of a full
+                sensor-based analytics suite.
+              </p>
+            </article>
+            <article>
+              <p class="step">03</p>
+              <h2>Brand cohesion was fragmented</h2>
+              <p>
+                Parts of the product ecosystem still carried DD Sports naming
+                and store imagery, which created confusion for customers who
+                knew the company and product family as ShotTracker.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Key Product Decisions</p>
+          <div class="decision-stack">
+            <article class="decision-card">
+              <figure class="artifact-image">
+                <img
+                  src="../../assets/projects/pulse-product-roles.png"
+                  alt="Product role map comparing Helix full-system membership with Pulse game-day subscription"
+                />
+              </figure>
+              <div class="decision-copy">
+                <p class="step">Decision 01</p>
+                <h2>Clarify Pulse’s role in a unified ShotTracker ecosystem</h2>
+                <p>
+                  Pulse was a lower-cost, lower-setup access point into
+                  ShotTracker. The product experience needed to communicate
+                  immediate game-day value, align with the broader ShotTracker
+                  app family, and avoid feeling like watered-down Helix
+                  functionality.
+                </p>
+              </div>
+            </article>
+
+            <article class="decision-card">
+              <div class="artifact-image tabbed-artifact helix-tabbed-artifact">
+                <input type="radio" name="helix-comparison-tabs" id="helix-before-tab" checked />
+                <input type="radio" name="helix-comparison-tabs" id="helix-proposed-tab" />
+                <div class="artifact-tabs" aria-label="Helix navigation and filtering comparison tabs">
+                  <label for="helix-before-tab">Helix before</label>
+                  <label for="helix-proposed-tab">Helix proposed</label>
+                </div>
+                <figure class="tabbed-panel helix-before-panel">
+                  <img
+                    src="../../assets/projects/helix-before-clean.png"
+                    alt="Helix before: date-based browsing with large court panel and no game/practice filter"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div class="image-fallback" aria-hidden="true">
+                    <span>Drop helix-before.png here</span>
+                  </div>
+                </figure>
+                <figure class="tabbed-panel helix-proposed-panel">
+                  <img
+                    src="../../assets/projects/helix-proposed-clean.png"
+                    alt="Helix proposed: schedule navigation with all, games, and practices filters plus expandable court view"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                  />
+                  <div class="image-fallback" aria-hidden="true">
+                    <span>Drop helix-proposed.png here</span>
+                  </div>
+                </figure>
+              </div>
+              <div class="decision-copy">
+                <p class="step">Decision 02</p>
+                <h2>Refresh Helix UX/UI while preserving the upgrade path</h2>
+                <p>
+                  I proposed a Helix refresh that improved the core workflow
+                  without changing the product’s underlying structure: activity
+                  was organized by context instead of only by date, filters made
+                  it easier to move between all activity, games, and practices,
+                  and the court view became a supporting expandable panel
+                  instead of dominating the screen. Because Pulse could become
+                  an adoption path into Helix, I carried the same mental model
+                  forward so upgrading would feel like an expansion, not like
+                  learning a new product.
+                </p>
+              </div>
+            </article>
+
+            <article class="decision-card">
+              <figure class="artifact-image">
+                <img
+                  src="../../assets/projects/pulse-favorite-stats-capability.png"
+                  alt="Net-new Favorite Stats capability showing selectable coach stats for Pulse"
+                />
+              </figure>
+              <div class="decision-copy">
+                <p class="step">Decision 03</p>
+                <h2>Create Favorite Stats as a reusable capability</h2>
+                <p>
+                  This was not a before/after redesign. It was a new capability
+                  I established from a Helix ask, then translated into Pulse so
+                  coaches could keep the most important stats large, visible,
+                  and easy to communicate during live game moments.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="feature-band pulse-band" aria-label="ShotTracker Pulse screen highlights">
+        <div class="feature-grid two-up-media">
+          <article class="feature-card tablet-card">
+            <div class="feature-media tablet-media">
+              <img src="../../assets/projects/pulse-live-stats.png" alt="Pulse live game stats dashboard" />
+            </div>
+            <h2>Track live game stats</h2>
+            <p>Track live game stats, edit your favorite stats and track all players’ shot, possession, and player movement.</p>
+          </article>
+          <article class="feature-card tablet-card">
+            <div class="feature-media tablet-media">
+              <img src="../../assets/projects/pulse-video.png" alt="Pulse game video availability screen" />
+            </div>
+            <h2>Video availability</h2>
+            <p>Game video stays paired with stats so coaches can review possession-level context quickly.</p>
+          </article>
+          <article class="feature-card tablet-card">
+            <div class="feature-media tablet-media">
+              <img src="../../assets/projects/pulse-favorite-stats.png" alt="Pulse favorite stats screen" />
+            </div>
+            <h2>Favorite stats</h2>
+            <p>Large format stats so coaches can communicate to their players on the court on what they should focus on.</p>
+          </article>
+          <article class="feature-card tablet-card">
+            <div class="feature-media tablet-media">
+              <img src="../../assets/projects/pulse-box-score.png" alt="Pulse box score screen" />
+            </div>
+            <h2>Box score</h2>
+            <p>Game summary views keep performance data organized for quick review during and after play.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-content case-bottom">
+        <section class="case-section">
+          <p class="case-kicker">Key Decisions</p>
+          <p>
+            The core tension was product fit. Helix supported a deeper,
+            sensor-based analytics membership, while Pulse needed to stand on
+            its own as a more affordable, easier-to-adopt game-day product. I
+            focused on the moments where design could create the most value:
+            clarifying Pulse’s role, aligning the app ecosystem under the
+            ShotTracker brand, creating a consistent navigation model from Helix
+            to Pulse, and introducing Favorite Stats as a configurable
+            capability that could scale across membership experiences.
+          </p>
+          <p>
+            This was not a blank-slate redesign. Some parts of the broader
+            system had to remain intact, so the work centered on high-impact UX
+            and brand changes that made Pulse feel purposeful for new programs
+            without disconnecting it from the ShotTracker product family or the
+            future Helix upgrade path.
+          </p>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Reflection</p>
+          <p>
+            Pulse was a useful reminder that product design is often about
+            creating clarity inside constraints. The opportunity was not to
+            redesign the entire ShotTracker ecosystem, but to identify where a
+            lighter product tier could deliver immediate game-day value and
+            still feel connected to the broader platform.
+          </p>
+          <p>
+            The strongest design work came from balancing adoption and
+            continuity: making Pulse easier for new programs to understand,
+            reducing confusion across product naming and store presence, and
+            preserving familiar concepts that could support a future move into
+            the deeper Helix experience.
+          </p>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Outcomes</p>
+          <div class="outcomes-grid">
+            <article>
+              <h2>60+</h2>
+              <p>NCAA men’s and women’s programs now using ShotTracker — including Big 12, Purdue, Indiana, and BYU</p>
+            </article>
+            <article>
+              <h2>+50</h2>
+              <p>Used by more than 50 college basketball programs.</p>
+            </article>
+            <article>
+              <h2>D1 → D3</h2>
+              <p>Pulse helped unlock expansion beyond D1 — now available to D2 and D3 programs for the first time.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="interest-card">
+          <h2>Interested in this project?</h2>
+          <p>I’m happy to walk through the full design process and decisions behind the product.</p>
+          <a href="mailto:paulamanriquer@gmail.com?subject=Portfolio%20inquiry">Contact me</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-mark">P.</p>
+      <p>2026 Paula Manrique. All rights reserved</p>
+    </footer>
+    <script src="../../case-lightbox.js" defer></script>
+  </body>
+</html>

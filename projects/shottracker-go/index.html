@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShotTracker Player App | Paula Manrique</title>
+    <meta
+      name="description"
+      content="A mobile-first product design case study for the ShotTracker Player App."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,70&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body class="project-detail">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">Paula Manrique</a>
+      <a class="linkedin" href="https://www.linkedin.com/in/paulamanriquer/" target="_blank" rel="noreferrer" aria-label="Paula Manrique on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.55C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
+        </svg>
+      </a>
+    </header>
+
+    <main>
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="../../index.html#selected-work">← Back to selected work</a>
+      </nav>
+      <section class="case-hero">
+        <img
+          src="../../assets/projects/go-hero.png"
+          alt="ShotTracker Player App hero with mobile screens"
+        />
+      </section>
+
+      <section class="case-content case-intro" aria-labelledby="case-title">
+        <p class="meta">
+          <span>Sports Tech</span><span>Mobile</span><span>2024</span>
+        </p>
+        <h1 id="case-title">ShotTracker Player App</h1>
+        <p class="case-lede">
+          A player-centered mobile experience for athletes to access
+          ShotTracker performance data directly, replacing a neglected legacy
+          app and moving player workflows out of coach-owned tools.
+        </p>
+
+        <dl class="quick-stats">
+          <div>
+            <dt>Role</dt>
+            <dd>Lead designer</dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>Research • UI/UX • Rebrand</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>iOS mobile</dd>
+          </div>
+          <div>
+            <dt>Company</dt>
+            <dd>ShotTracker/DD Sports</dd>
+          </div>
+        </dl>
+
+        <section class="case-section">
+          <p class="case-kicker">Design Challenge</p>
+          <div class="challenge-grid">
+            <article>
+              <p class="step">01</p>
+              <h2>Player access was indirect</h2>
+              <p>
+                The existing player app had become outdated and unusable, so
+                athletes rarely used it. In practice, players depended on
+                coach-owned iPads or team staff to understand their own data.
+              </p>
+            </article>
+            <article>
+              <p class="step">02</p>
+              <h2>Player needs were underrepresented</h2>
+              <p>
+                The broader platform had been shaped around coaches, staff, and
+                operational needs. The mobile product needed to define athletes
+                as a distinct user segment with their own goals, context, and
+                moments of use.
+              </p>
+            </article>
+            <article>
+              <p class="step">03</p>
+              <h2>Personalization had to be governed</h2>
+              <p>
+                Helix already allowed open-ended color selection, but that
+                created brand inconsistency and accessibility risk. Team
+                branding needed rules, not a free-form color wheel.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Key Product Decisions</p>
+          <div class="decision-stack">
+            <article class="decision-card">
+              <figure class="artifact-image">
+                <img
+                  src="../../assets/projects/go-player-access.png"
+                  alt="Before and after diagram showing the shift from coach-owned access to a player mobile app"
+                />
+              </figure>
+              <div class="decision-copy">
+                <p class="step">Decision 01</p>
+                <h2>Create a player-owned access point</h2>
+                <p>
+                  I reframed the mobile app around athlete autonomy instead of
+                  adapting coach workflows to a smaller screen. The experience
+                  focused on the player’s mental model: checking progress,
+                  confirming workouts, and understanding performance in the
+                  moments immediately before, during, and after training.
+                </p>
+              </div>
+            </article>
+
+            <article class="decision-card">
+              <figure class="artifact-image">
+                <img
+                  src="../../assets/projects/go-team-color-system.png"
+                  alt="Team color system showing generated tonal palettes and accessible UI states"
+                />
+              </figure>
+              <div class="decision-copy">
+                <p class="step">Decision 02</p>
+                <h2>Make team branding scalable and accessible</h2>
+                <p>
+                  I proposed replacing open-ended color selection with a governed
+                  team-color system. Instead of letting users choose any color,
+                  the product would use each team’s official primary color and
+                  generate tonal values, gradients, and opacity rules
+                  programmatically, keeping the UI branded, consistent, and more
+                  accessible.
+                </p>
+              </div>
+            </article>
+
+            <article class="decision-card">
+              <figure class="artifact-image">
+                <img
+                  src="../../assets/projects/go-mvp-focus.png"
+                  alt="MVP focus diagram showing sync to team, confirm sensor connection, track live progress, and review workout"
+                />
+              </figure>
+              <div class="decision-copy">
+                <p class="step">Decision 03</p>
+                <h2>Reduce the first version to the highest-value loop</h2>
+                <p>
+                  The account and sensor architecture was complex, so I kept
+                  the MVP centered on the loop players needed most: personalize
+                  the app, see workouts, confirm connection, and track progress
+                  live.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="feature-band phone-band team-branding-demo" aria-label="ShotTracker Player App screen highlights">
+        <input class="team-branding-radio" type="radio" name="team-branding" id="team-shottracker" checked />
+        <input class="team-branding-radio" type="radio" name="team-branding" id="team-wildcats" />
+        <input class="team-branding-radio" type="radio" name="team-branding" id="team-houston" />
+        <div class="team-branding-header">
+          <div>
+            <p class="feature-kicker">Team branding demo</p>
+            <h2>Personalize your experience</h2>
+          </div>
+          <div class="team-branding-controls" aria-label="Select team branding">
+            <label for="team-shottracker"><span></span>ShotTracker</label>
+            <label for="team-wildcats"><span></span>Kansas State</label>
+            <label for="team-houston"><span></span>Houston University</label>
+          </div>
+        </div>
+        <div class="feature-grid four-up">
+          <article class="feature-card">
+            <div class="feature-media phone-media">
+              <img class="team-branded-image brand-shottracker" src="../../assets/projects/go-team-shottracker.png" alt="ShotTracker team personalization onboarding screen" />
+              <img class="team-branded-image brand-wildcats" src="../../assets/projects/go-team-wildcats.png" alt="Kansas State team personalization onboarding screen" />
+              <img class="team-branded-image brand-houston" src="../../assets/projects/go-team-houston.png" alt="Houston University team personalization onboarding screen" />
+            </div>
+            <h2>Tailored to your team</h2>
+            <p>Select an official team identity and the app applies an accessible, consistent color system automatically.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media phone-media">
+              <img class="team-branded-image brand-shottracker" src="../../assets/projects/go-workout-shottracker.png" alt="ShotTracker workout stats mobile screen" />
+              <img class="team-branded-image brand-wildcats" src="../../assets/projects/go-workout-wildcats.png" alt="Kansas State workout stats mobile screen" />
+              <img class="team-branded-image brand-houston" src="../../assets/projects/go-workout-houston.png" alt="Houston University workout stats mobile screen" />
+            </div>
+            <h2>Track every workout</h2>
+            <p>View performance stats and insights from all completed workouts, all in one place.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media phone-media">
+              <img class="team-branded-image brand-shottracker" src="../../assets/projects/go-sensor-shottracker.png" alt="ShotTracker sensor connection confirmation screen" />
+              <img class="team-branded-image brand-wildcats" src="../../assets/projects/go-sensor-wildcats.png" alt="Kansas State sensor connection confirmation screen" />
+              <img class="team-branded-image brand-houston" src="../../assets/projects/go-sensor-houston.png" alt="Houston University sensor connection confirmation screen" />
+            </div>
+            <h2>Seamless sensor connection</h2>
+            <p>Sensors connect automatically in the gym so you can start tracking right away with no setup.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-media phone-media">
+              <img class="team-branded-image brand-shottracker" src="../../assets/projects/go-live-shottracker.png" alt="ShotTracker live workout training screen" />
+              <img class="team-branded-image brand-wildcats" src="../../assets/projects/go-live-wildcats.png" alt="Kansas State live workout training screen" />
+              <img class="team-branded-image brand-houston" src="../../assets/projects/go-live-houston.png" alt="Houston University live workout training screen" />
+            </div>
+            <h2>Live workout training</h2>
+            <p>See shot and zone charts update in real time during workouts, so you can track progress live.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-content case-bottom">
+        <section class="case-section">
+          <p class="case-kicker">Key Decisions</p>
+          <p>
+            The core design decision was user ownership. Players were not a
+            smaller version of coaches; they had different motivations, access
+            patterns, and success criteria. I used that distinction to separate
+            the player experience from coach workflows and define a product that
+            supported athlete autonomy, live workout feedback, and personal
+            progress.
+          </p>
+          <p>
+            The team-color system became a product systems decision, not just a
+            visual styling choice. I moved personalization from individual taste
+            to brand governance: engineering could select an official team
+            primary color, and the interface would derive the supporting
+            tonalities, gradients, and opacity values. That made the product feel
+            connected to each program while reducing accessibility risk,
+            improving consistency, and making the approach scalable across many
+            teams.
+          </p>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Reflection</p>
+          <p>
+            This project reinforced how much product design changes adoption.
+            The legacy player app had been engineering-led, with outdated UX,
+            weak usability, and enough technical debt that the engineering team
+            recommended rebuilding from scratch. It was a clear example of how
+            even useful data can go unused when the experience around it does
+            not support the people expected to use it.
+          </p>
+          <p>
+            The rebuild gave players a more independent way to train. Instead
+            of relying on a shared iPad or a coach-controlled workflow, athletes
+            could start workouts on their own phone, train individually or with
+            a group, and see stats that were tied to their own performance.
+            That shift made the product more personal, more useful, and more
+            likely to become part of a player’s routine.
+          </p>
+          <p>
+            It also showed how systems thinking can make personalization feel
+            custom without becoming fragile. The team-color model gave players a
+            product that felt connected to their program while giving design and
+            engineering a controlled, accessible framework that could be reused
+            beyond the first release.
+          </p>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Outcomes</p>
+          <div class="outcomes-grid">
+            <article>
+              <h2>20/20</h2>
+              <p>Players in testing said they’d likely use the app.</p>
+            </article>
+            <article>
+              <h2>24%</h2>
+              <p>Player adoption rate in the first 3 months</p>
+            </article>
+            <article>
+              <h2>KU + AJ Storr</h2>
+              <p>Featured in University of Kansas Instagram promo video.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section promo-video-section">
+          <p class="case-kicker">Launch Context</p>
+          <div class="promo-video-grid">
+            <div>
+              <h2>Featured in an athlete promo video</h2>
+              <p>
+                The mobile app was later shown in a promotional video with
+                University of Kansas athlete AJ Storr, giving the product a
+                real launch context beyond static screens.
+              </p>
+            </div>
+            <figure class="promo-video-frame">
+              <video
+                class="promo-video-player"
+                controls
+                preload="metadata"
+                poster="../../assets/projects/shottracker-go-aj-storr-promo-poster.png"
+              >
+                <source src="../../assets/projects/shottracker-go-aj-storr-promo-export.mp4" type="video/mp4" />
+                <a href="../../assets/projects/shottracker-go-aj-storr-promo-export.mp4">View the ShotTracker promo video</a>
+              </video>
+              <figcaption>ShotTracker mobile app promo featuring AJ Storr.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="interest-card">
+          <h2>Interested in this project?</h2>
+          <p>I’m happy to walk through the full design process and decisions behind the product.</p>
+          <a href="mailto:paulamanriquer@gmail.com?subject=Portfolio%20inquiry">Contact me</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-mark">P.</p>
+      <p>2026 Paula Manrique. All rights reserved</p>
+    </footer>
+    <script src="../../case-lightbox.js" defer></script>
+  </body>
+</html>

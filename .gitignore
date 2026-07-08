@@ -1,0 +1,16 @@
+.DS_Store
+.swift-module-cache/
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+
+# Dependency/build folders if this ever becomes a generated site
+node_modules/
+dist/
+build/
+.netlify/
+
+# System logs
+*.log
