@@ -606,6 +606,10 @@ h1 {
   padding: 16px 0;
 }
 
+.case-section > .case-kicker {
+  margin-bottom: 16px;
+}
+
 .case-section > p:not(.case-kicker):not(.step) {
   color: var(--body);
   font-size: 16px;
@@ -2671,8 +2675,19 @@ h1 {
   }
 
   .case-hero img {
-    aspect-ratio: 1830 / 554;
-    min-height: 210px;
+    aspect-ratio: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .tag-list {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  .tag-list li {
+    flex: 0 0 auto;
+    max-width: 100%;
   }
 
   .case-intro {
