@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ShotTracker Player App | Paula Manrique</title>
+    <title>ShotTracker Go | Paula Manrique</title>
     <meta
       name="description"
-      content="A mobile-first product design case study for the ShotTracker Player App."
+      content="A mobile-first product design case study for ShotTracker Go, the player-facing app within Helix."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,11 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,70&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../styles.css?v=brand-assets-small" />
   </head>
   <body class="project-detail">
     <header class="site-header">
-      <a class="brand" href="../../index.html">Paula Manrique</a>
+      <a class="brand" href="../../index.html" aria-label="Paula Manrique home">
+        <img class="brand-logo" src="../../assets/paula-wordmark.svg" alt="Paula Manrique" />
+      </a>
       <a class="linkedin" href="https://www.linkedin.com/in/paulamanriquer/" target="_blank" rel="noreferrer" aria-label="Paula Manrique on LinkedIn">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.55C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
@@ -33,7 +36,7 @@
       <section class="case-hero">
         <img
           src="../../assets/projects/go-hero.png"
-          alt="ShotTracker Player App hero with mobile screens"
+          alt="ShotTracker Go hero with mobile screens"
         />
       </section>
 
@@ -41,11 +44,12 @@
         <p class="meta">
           <span>Sports Tech</span><span>Mobile</span><span>2024</span>
         </p>
-        <h1 id="case-title">ShotTracker Player App</h1>
+        <h1 id="case-title">ShotTracker Go</h1>
         <p class="case-lede">
-          A player-centered mobile experience for athletes to access
-          ShotTracker performance data directly, replacing a neglected legacy
-          app and moving player workflows out of coach-owned tools.
+          ShotTracker Go is the player-facing mobile app within Helix. The MVP
+          gave athletes the freedom to train whenever they wanted in their
+          school’s gym, see shooting stats immediately, and compare their
+          performance with the team’s top player and median.
         </p>
 
         <dl class="quick-stats">
@@ -68,34 +72,64 @@
         </dl>
 
         <section class="case-section">
-          <p class="case-kicker">Design Challenge</p>
+          <p class="case-kicker">How ShotTracker Go Works</p>
           <div class="challenge-grid">
             <article>
               <p class="step">01</p>
-              <h2>Player access was indirect</h2>
+              <h2>Helix captures the workout</h2>
               <p>
-                The existing player app had become outdated and unusable, so
-                athletes rarely used it. In practice, players depended on
-                coach-owned iPads or team staff to understand their own data.
+                Court sensors, a sensor-enabled ball, and a player sensor record
+                shooting activity automatically.
               </p>
             </article>
             <article>
               <p class="step">02</p>
-              <h2>Player needs were underrepresented</h2>
+              <h2>Players train on their schedule</h2>
               <p>
-                The broader platform had been shaped around coaches, staff, and
-                operational needs. The mobile product needed to define athletes
-                as a distinct user segment with their own goals, context, and
-                moments of use.
+                Athletes can start their own workout whenever they have access
+                to the school gym, without waiting for a coach-led session.
               </p>
             </article>
             <article>
               <p class="step">03</p>
-              <h2>Personalization had to be governed</h2>
+              <h2>Players see where they stand</h2>
               <p>
-                Helix already allowed open-ended color selection, but that
-                created brand inconsistency and accessibility risk. Team
-                branding needed rules, not a free-form color wheel.
+                Personalized dashboards show immediate results and compare each
+                athlete with the team’s top performer and median.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Design Challenge</p>
+          <div class="challenge-grid">
+            <article>
+              <p class="step">01</p>
+              <h2>Give players direct access</h2>
+              <p>
+                The legacy app no longer supported current player needs, so
+                athletes often depended on coach-owned iPads or team staff to
+                understand their own performance data.
+              </p>
+            </article>
+            <article>
+              <p class="step">02</p>
+              <h2>Support development beyond practice</h2>
+              <p>
+                Players needed a personal way to train on their own time, see
+                results immediately, and understand their performance in the
+                context of the team.
+              </p>
+            </article>
+            <article>
+              <p class="step">03</p>
+              <h2>Turn team colors into a safe system</h2>
+              <p>
+                Before I joined, Helix let coaches choose any color in response
+                to client requests for team branding. That color was applied as
+                one tone throughout the app, creating inconsistent results and
+                combinations that could fail accessibility standards.
               </p>
             </article>
           </div>
@@ -113,13 +147,12 @@
               </figure>
               <div class="decision-copy">
                 <p class="step">Decision 01</p>
-                <h2>Create a player-owned access point</h2>
+                <h2>Design a player-owned dashboard</h2>
                 <p>
-                  I reframed the mobile app around athlete autonomy instead of
-                  adapting coach workflows to a smaller screen. The experience
-                  focused on the player’s mental model: checking progress,
-                  confirming workouts, and understanding performance in the
-                  moments immediately before, during, and after training.
+                  I designed Go around athlete autonomy rather than shrinking a
+                  coach workflow onto a phone. Players could start workouts on
+                  their own, review progress, and understand how their results
+                  compared with the team’s top player and median.
                 </p>
               </div>
             </article>
@@ -135,12 +168,15 @@
                 <p class="step">Decision 02</p>
                 <h2>Make team branding scalable and accessible</h2>
                 <p>
-                  I proposed replacing open-ended color selection with a governed
-                  team-color system. Instead of letting users choose any color,
-                  the product would use each team’s official primary color and
-                  generate tonal values, gradients, and opacity rules
-                  programmatically, keeping the UI branded, consistent, and more
-                  accessible.
+                  I replaced open-ended color selection with a governed system.
+                  Engineering would configure each school’s official primary
+                  color in the backend, removing choices that could create poor
+                  contrast. The interface would then generate the approved tones,
+                  gradients, and opacity values it needed automatically. This
+                  preserved the team identity clients wanted while keeping the
+                  experience consistent and accessible. I added these foundations
+                  to the shared design library so Go stayed cohesive with Helix
+                  and other ShotTracker products.
                 </p>
               </div>
             </article>
@@ -154,12 +190,13 @@
               </figure>
               <div class="decision-copy">
                 <p class="step">Decision 03</p>
-                <h2>Reduce the first version to the highest-value loop</h2>
+                <h2>Focus the MVP on self-directed training</h2>
                 <p>
-                  The account and sensor architecture was complex, so I kept
-                  the MVP centered on the loop players needed most: personalize
-                  the app, see workouts, confirm connection, and track progress
-                  live.
+                  The account and sensor architecture was complex, so I kept the
+                  first version centered on what players needed most: join their
+                  team, confirm their sensor connection, start a workout, see
+                  live stats, and review their performance. Coach-assigned
+                  workouts were planned for Phase 2.
                 </p>
               </div>
             </article>
@@ -167,7 +204,7 @@
         </section>
       </section>
 
-      <section class="feature-band phone-band team-branding-demo" aria-label="ShotTracker Player App screen highlights">
+      <section class="feature-band phone-band team-branding-demo" aria-label="ShotTracker Go screen highlights">
         <input class="team-branding-radio" type="radio" name="team-branding" id="team-shottracker" checked />
         <input class="team-branding-radio" type="radio" name="team-branding" id="team-wildcats" />
         <input class="team-branding-radio" type="radio" name="team-branding" id="team-houston" />
@@ -199,7 +236,7 @@
               <img class="team-branded-image brand-houston" src="../../assets/projects/go-workout-houston.png" alt="Houston University workout stats mobile screen" />
             </div>
             <h2>Track every workout</h2>
-            <p>View performance stats and insights from all completed workouts, all in one place.</p>
+            <p>Review completed workouts, performance stats, and team comparisons in one place.</p>
           </article>
           <article class="feature-card">
             <div class="feature-media phone-media">
@@ -208,7 +245,7 @@
               <img class="team-branded-image brand-houston" src="../../assets/projects/go-sensor-houston.png" alt="Houston University sensor connection confirmation screen" />
             </div>
             <h2>Seamless sensor connection</h2>
-            <p>Sensors connect automatically in the gym so you can start tracking right away with no setup.</p>
+            <p>Confirm the player sensor is connected before training so Helix can capture the workout.</p>
           </article>
           <article class="feature-card">
             <div class="feature-media phone-media">
@@ -217,7 +254,7 @@
               <img class="team-branded-image brand-houston" src="../../assets/projects/go-live-houston.png" alt="Houston University live workout training screen" />
             </div>
             <h2>Live workout training</h2>
-            <p>See shot and zone charts update in real time during workouts, so you can track progress live.</p>
+            <p>See shot and zone charts update in real time while training.</p>
           </article>
         </div>
       </section>
@@ -227,41 +264,38 @@
           <p class="case-kicker">Key Decisions</p>
           <p>
             The core design decision was user ownership. Players were not a
-            smaller version of coaches; they had different motivations, access
-            patterns, and success criteria. I used that distinction to separate
-            the player experience from coach workflows and define a product that
-            supported athlete autonomy, live workout feedback, and personal
-            progress.
+            smaller version of coaches; they had different motivations and
+            moments of use. I focused the MVP on giving athletes direct access
+            to self-directed training, immediate results, and meaningful team
+            comparisons. Coach-assigned workouts remained part of the Phase 2
+            roadmap.
           </p>
           <p>
             The team-color system became a product systems decision, not just a
-            visual styling choice. I moved personalization from individual taste
-            to brand governance: engineering could select an official team
-            primary color, and the interface would derive the supporting
-            tonalities, gradients, and opacity values. That made the product feel
-            connected to each program while reducing accessibility risk,
-            improving consistency, and making the approach scalable across many
-            teams.
+            visual styling choice. I moved personalization from unrestricted
+            coach selection to brand governance: engineering configured each
+            school’s official primary color, and the interface derived the
+            supporting tones, gradients, and opacity values automatically. That
+            met the client need for team identity while reducing accessibility
+            risk and making the approach scalable across many programs.
           </p>
         </section>
 
         <section class="case-section">
           <p class="case-kicker">Reflection</p>
           <p>
-            This project reinforced how much product design changes adoption.
-            The legacy player app had been engineering-led, with outdated UX,
-            weak usability, and enough technical debt that the engineering team
-            recommended rebuilding from scratch. It was a clear example of how
-            even useful data can go unused when the experience around it does
-            not support the people expected to use it.
+            This project reinforced how much the experience around data affects
+            adoption. The legacy player app no longer supported current player
+            needs, and the engineering team recommended rebuilding it. Even
+            useful performance data can go unused when athletes cannot access
+            or understand it easily.
           </p>
           <p>
-            The rebuild gave players a more independent way to train. Instead
-            of relying on a shared iPad or a coach-controlled workflow, athletes
-            could start workouts on their own phone, train individually or with
-            a group, and see stats that were tied to their own performance.
-            That shift made the product more personal, more useful, and more
-            likely to become part of a player’s routine.
+            The rebuild gave players a more independent way to train. Athletes
+            could use their own phone to start a workout whenever they had
+            access to the school gym, train individually or with a group, and
+            see results immediately. Comparing their performance with the top
+            player and team median gave those results useful context.
           </p>
           <p>
             It also showed how systems thinking can make personalization feel
@@ -325,7 +359,7 @@
     </main>
 
     <footer class="site-footer">
-      <p class="footer-mark">P.</p>
+      <img class="footer-mark" src="../../assets/paula-mark-footer.png" alt="" />
       <p>2026 Paula Manrique. All rights reserved</p>
     </footer>
     <script src="../../case-lightbox.js" defer></script>

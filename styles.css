@@ -48,12 +48,15 @@ a {
   padding: 16px 64px;
 }
 
-.brand,
-.footer-mark {
-  font-family: Fraunces, Georgia, serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 32px;
+.brand {
+  align-items: center;
+  display: inline-flex;
+}
+
+.brand-logo {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(19%) saturate(2368%) hue-rotate(145deg) brightness(91%) contrast(102%);
+  height: 32px;
+  width: auto;
 }
 
 .linkedin {
@@ -1865,9 +1868,11 @@ h1 {
 }
 
 .footer-mark {
-  color: var(--surface);
+  height: 32px;
   left: 64px;
+  object-fit: contain;
   position: absolute;
+  width: 32px;
 }
 
 .stickerswap-detail main {
@@ -2583,8 +2588,9 @@ h1 {
     padding: 10px 24px;
   }
 
-  .brand {
-    font-size: 26px;
+  .brand-logo {
+    height: 26px;
+    width: auto;
   }
 
   .linkedin {

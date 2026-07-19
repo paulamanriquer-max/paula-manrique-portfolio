@@ -14,7 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,70&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../styles.css?v=brand-assets-small" />
     <style>
       body { background: #f9f9f9; color: #212529; }
       main { display: block; min-height: 100vh; }
@@ -23,7 +24,9 @@
   </head>
   <body class="project-detail stickerswap-detail">
     <header class="site-header">
-      <a class="brand" href="../../index.html">Paula Manrique</a>
+      <a class="brand" href="../../index.html" aria-label="Paula Manrique home">
+        <img class="brand-logo" src="../../assets/paula-wordmark.svg" alt="Paula Manrique" />
+      </a>
       <a class="linkedin" href="https://www.linkedin.com/in/paulamanriquer/" target="_blank" rel="noreferrer" aria-label="Paula Manrique on LinkedIn">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.55C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
@@ -49,9 +52,10 @@
         </p>
         <h1 id="case-title">StickerSwap</h1>
         <p class="case-lede">
-          A shipped beta for 2026 FIFA World Cup Panini collectors, inspired by
-          the nostalgia of collecting World Cup player stickers and a desire to
-          see how far a designer can take a product with modern AI tools.
+          StickerSwap launched in beta for 2026 FIFA World Cup Panini
+          collectors. It was inspired by the nostalgia of collecting World Cup
+          player stickers and my desire to see how far a designer can take a
+          product with modern AI tools.
         </p>
 
         <dl class="quick-stats">
@@ -271,7 +275,7 @@
     </main>
 
     <footer class="site-footer">
-      <p class="footer-mark">P.</p>
+      <img class="footer-mark" src="../../assets/paula-mark-footer.png" alt="" />
       <p>2026 Paula Manrique. All rights reserved</p>
     </footer>
     <script src="../../case-lightbox.js" defer></script>
