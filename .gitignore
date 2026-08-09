@@ -12,5 +12,8 @@ dist/
 build/
 .netlify/
 
+# Local private archives that should not be published
+private-case-study-archive/
+
 # System logs
 *.log
