@@ -439,10 +439,10 @@ h1 {
 }
 
 .tag-list {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 12px;
   max-width: 100%;
-  overflow-x: auto;
+  overflow-x: visible;
   padding-bottom: 2px;
 }
 
@@ -452,9 +452,12 @@ h1 {
   border-radius: 4px;
   color: var(--body);
   font-size: 12px;
+  flex: 0 1 auto;
   letter-spacing: -0.1504px;
   line-height: 20px;
+  max-width: 100%;
   padding: 4px 8px;
+  overflow-wrap: anywhere;
   white-space: nowrap;
 }
 
@@ -478,6 +481,94 @@ h1 {
   font-family: Inter, Arial, sans-serif;
   font-size: 24px;
   line-height: 1;
+}
+
+.more-work {
+  margin-top: 32px;
+}
+
+.more-work summary {
+  align-items: center;
+  border: 1px solid rgba(0, 60, 71, 0.24);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  line-height: 20px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 14px 22px;
+  width: fit-content;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.more-work summary::-webkit-details-marker {
+  display: none;
+}
+
+.more-work summary::after {
+  content: "+";
+  font-size: 20px;
+  line-height: 1;
+}
+
+.more-work summary:hover,
+.more-work summary:focus-visible {
+  background: rgba(225, 255, 193, 0.72);
+  border-color: var(--accent);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.more-work[open] summary {
+  display: none;
+}
+
+.more-work-grid {
+  margin-top: 24px;
+}
+
+.show-less-button {
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgba(0, 60, 71, 0.24);
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 10px;
+  justify-content: center;
+  line-height: 20px;
+  margin: 24px auto 0;
+  padding: 14px 22px;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
+}
+
+.show-less-button::after {
+  content: "-";
+  font-size: 20px;
+  line-height: 1;
+}
+
+.show-less-button:hover,
+.show-less-button:focus-visible {
+  background: rgba(225, 255, 193, 0.72);
+  border-color: var(--accent);
+  outline: none;
+  transform: translateY(-2px);
 }
 
 .project-detail main {
