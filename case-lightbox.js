@@ -94,7 +94,7 @@
   };
 
   images.forEach((image) => {
-    const target = image.closest(".tabbed-panel, .artifact-image, .comparison-state, .feature-media") || image;
+    const target = image.closest(".platform-collage-item, .tabbed-panel, .artifact-image, .comparison-state, .feature-media") || image;
     enhanceTarget(target, image);
   });
 

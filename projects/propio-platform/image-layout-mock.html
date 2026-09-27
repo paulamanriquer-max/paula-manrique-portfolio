@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propio Platform Image Layout Mock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,500..700,70&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #001f2f;
+        --deep: #000f2c;
+        --teal: #003c47;
+        --green: #e1ffc1;
+        --paper: #f8f8f8;
+        --ink: #003c47;
+        --muted: rgba(248, 248, 248, 0.72);
+        --line: rgba(248, 248, 248, 0.16);
+        --shadow: 0 28px 80px rgba(0, 15, 44, 0.26);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #edf5eb;
+        color: var(--ink);
+        font-family: Inter, system-ui, sans-serif;
+        margin: 0;
+        padding: 48px;
+      }
+
+      main {
+        display: grid;
+        gap: 32px;
+        margin: 0 auto;
+        max-width: 1440px;
+      }
+
+      .intro {
+        max-width: 860px;
+      }
+
+      .eyebrow,
+      .tag {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+      }
+
+      .eyebrow {
+        color: var(--teal);
+        margin: 0 0 10px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Fraunces, Georgia, serif;
+        letter-spacing: -0.02em;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: clamp(42px, 6vw, 82px);
+        line-height: 0.96;
+      }
+
+      .intro p {
+        color: rgba(0, 60, 71, 0.72);
+        font-size: 18px;
+        line-height: 28px;
+        margin: 18px 0 0;
+      }
+
+      .mock-card {
+        background:
+          radial-gradient(circle at 14% 16%, rgba(225, 255, 193, 0.18), transparent 28%),
+          linear-gradient(135deg, var(--navy) 0%, var(--teal) 54%, var(--deep) 100%);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        color: var(--paper);
+        min-height: 720px;
+        overflow: hidden;
+        padding: 42px;
+        position: relative;
+      }
+
+      .mock-card.light {
+        background: var(--paper);
+        border: 1px solid rgba(0, 60, 71, 0.12);
+        color: var(--ink);
+      }
+
+      .mock-header {
+        align-items: end;
+        display: flex;
+        gap: 28px;
+        justify-content: space-between;
+        margin-bottom: 34px;
+      }
+
+      .mock-header h2 {
+        font-size: clamp(34px, 4vw, 58px);
+        line-height: 1;
+        max-width: 760px;
+      }
+
+      .mock-header p {
+        color: var(--muted);
+        line-height: 24px;
+        margin: 0;
+        max-width: 420px;
+      }
+
+      .light .mock-header p {
+        color: rgba(0, 60, 71, 0.68);
+      }
+
+      .tag {
+        background: var(--green);
+        border-radius: 999px;
+        color: var(--ink);
+        display: inline-flex;
+        padding: 10px 14px;
+      }
+
+      .screen {
+        background: rgba(248, 248, 248, 0.94);
+        border: 1px solid rgba(248, 248, 248, 0.28);
+        border-radius: 20px;
+        box-shadow: 0 24px 70px rgba(0, 15, 44, 0.28);
+        color: var(--ink);
+        overflow: hidden;
+      }
+
+      .screen-top {
+        align-items: center;
+        background: #eef3f5;
+        border-bottom: 1px solid rgba(0, 60, 71, 0.12);
+        display: flex;
+        gap: 8px;
+        height: 42px;
+        padding: 0 16px;
+      }
+
+      .dot {
+        background: #cdd6da;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+      }
+
+      .screen-body {
+        display: grid;
+        gap: 18px;
+        padding: 22px;
+      }
+
+      .bar,
+      .line,
+      .tile {
+        background: rgba(0, 60, 71, 0.1);
+        border-radius: 999px;
+      }
+
+      .bar {
+        height: 18px;
+        width: 42%;
+      }
+
+      .line {
+        height: 12px;
+      }
+
+      .tile {
+        border-radius: 14px;
+        min-height: 84px;
+      }
+
+      .layout-hero {
+        display: grid;
+        gap: 28px;
+        grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+      }
+
+      .hero-copy {
+        align-self: center;
+      }
+
+      .hero-copy h3 {
+        font-size: 58px;
+        line-height: 0.96;
+        margin: 18px 0;
+      }
+
+      .hero-copy p {
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0;
+      }
+
+      .hero-stack {
+        min-height: 470px;
+        position: relative;
+      }
+
+      .hero-stack .screen {
+        position: absolute;
+      }
+
+      .hero-stack .screen.one {
+        height: 330px;
+        left: 0;
+        top: 80px;
+        width: 72%;
+      }
+
+      .hero-stack .screen.two {
+        height: 300px;
+        right: 0;
+        top: 20px;
+        transform: rotate(3deg);
+        width: 62%;
+      }
+
+      .hero-stack .screen.three {
+        bottom: 0;
+        height: 210px;
+        left: 22%;
+        transform: rotate(-2deg);
+        width: 60%;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+      }
+
+      .pill {
+        border: 1px solid rgba(248, 248, 248, 0.22);
+        border-radius: 999px;
+        color: var(--paper);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 13px;
+      }
+
+      .inconsistency-grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+
+      .mini-product {
+        background: rgba(248, 248, 248, 0.08);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        min-height: 420px;
+        overflow: hidden;
+        padding: 12px;
+      }
+
+      .mini-product:nth-child(2n) {
+        transform: translateY(32px);
+      }
+
+      .mini-product:nth-child(3n) {
+        transform: translateY(14px);
+      }
+
+      .mini-frame {
+        background: rgba(248, 248, 248, 0.94);
+        border-radius: 12px;
+        height: 280px;
+        padding: 14px;
+      }
+
+      .mini-frame.alt {
+        background: #eef4ff;
+      }
+
+      .mini-frame.dark {
+        background: #102a43;
+      }
+
+      .caption {
+        color: rgba(248, 248, 248, 0.74);
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        margin: 16px 4px 0;
+      }
+
+      .component-wall {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+
+      .component-panel {
+        background: #fff;
+        border: 1px solid rgba(0, 60, 71, 0.12);
+        border-radius: 22px;
+        min-height: 470px;
+        padding: 24px;
+      }
+
+      .tokens {
+        display: grid;
+        gap: 12px;
+      }
+
+      .token {
+        align-items: center;
+        background: #eef3f5;
+        border-radius: 14px;
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 42px 1fr;
+        padding: 12px;
+      }
+
+      .swatch {
+        border-radius: 12px;
+        height: 42px;
+      }
+
+      .components {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .component {
+        align-items: center;
+        background: #eef3f5;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        min-height: 92px;
+        padding: 12px;
+      }
+
+      .component.button {
+        background: var(--teal);
+        color: white;
+        font-weight: 800;
+      }
+
+      .proof-grid {
+        display: grid;
+        gap: 22px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .proof-card {
+        background: rgba(248, 248, 248, 0.08);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 18px;
+      }
+
+      .before-after {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: 0.86fr 1.14fr;
+        margin-top: 16px;
+      }
+
+      .before-after .screen {
+        min-height: 320px;
+      }
+
+      .before-after .screen:first-child {
+        opacity: 0.72;
+        transform: scale(0.92);
+        transform-origin: right center;
+      }
+
+      .platform-shell {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 0.82fr 1.18fr;
+      }
+
+      .nav-shell {
+        background: rgba(248, 248, 248, 0.94);
+        border-radius: 24px;
+        color: var(--ink);
+        min-height: 520px;
+        overflow: hidden;
+      }
+
+      .nav-body {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        min-height: 520px;
+      }
+
+      .sidebar {
+        background: #0b2a66;
+        padding: 22px;
+      }
+
+      .nav-item {
+        background: rgba(248, 248, 248, 0.14);
+        border-radius: 12px;
+        height: 42px;
+        margin-bottom: 12px;
+      }
+
+      .canvas {
+        display: grid;
+        gap: 18px;
+        padding: 24px;
+      }
+
+      .architecture-map {
+        display: grid;
+        gap: 14px;
+      }
+
+      .arch-row {
+        align-items: center;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 160px 1fr;
+      }
+
+      .arch-label {
+        color: var(--green);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      .arch-boxes {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .arch-box {
+        align-items: center;
+        background: rgba(248, 248, 248, 0.1);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        color: var(--paper);
+        display: flex;
+        font-weight: 800;
+        justify-content: center;
+        min-height: 76px;
+        padding: 12px;
+        text-align: center;
+      }
+
+      .notes {
+        background: rgba(225, 255, 193, 0.72);
+        border-radius: 20px;
+        color: var(--ink);
+        display: grid;
+        gap: 12px;
+        padding: 24px;
+      }
+
+      .notes h3 {
+        font-size: 32px;
+      }
+
+      .notes p {
+        line-height: 24px;
+        margin: 0;
+      }
+
+      @media (max-width: 920px) {
+        body {
+          padding: 24px;
+        }
+
+        .mock-card {
+          padding: 24px;
+        }
+
+        .mock-header,
+        .layout-hero,
+        .component-wall,
+        .proof-grid,
+        .platform-shell {
+          grid-template-columns: 1fr;
+        }
+
+        .mock-header {
+          align-items: start;
+          display: grid;
+        }
+
+        .inconsistency-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .mini-product:nth-child(n) {
+          transform: none;
+        }
+
+        .hero-stack {
+          min-height: 420px;
+        }
+
+        .arch-row,
+        .arch-boxes,
+        .nav-body {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="intro">
+        <p class="eyebrow">Propio Platform case study image mock</p>
+        <h1>Layout ideas for replacing the placeholders</h1>
+        <p>
+          Use these as composition references. Replace the abstract screens with
+          real screenshots, exports from Figma, Storybook, or product diagrams.
+        </p>
+      </section>
+
+      <section class="mock-card">
+        <div class="layout-hero">
+          <div class="hero-copy">
+            <span class="tag">Hero image</span>
+            <h3>One ecosystem, many product surfaces</h3>
+            <p>
+              Best for the top of the case study. Show the idea of Translation,
+              Interpreter, Scheduling, Analytics, and shared platform services
+              becoming one connected ecosystem.
+            </p>
+            <div class="pill-row">
+              <span class="pill">Translation</span>
+              <span class="pill">Interpreter</span>
+              <span class="pill">Scheduling</span>
+              <span class="pill">Analytics</span>
+              <span class="pill">Shared foundation</span>
+            </div>
+          </div>
+          <div class="hero-stack">
+            <div class="screen one">
+              <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="screen-body">
+                <span class="bar"></span>
+                <span class="line"></span>
+                <span class="line" style="width: 74%"></span>
+                <span class="tile"></span>
+                <span class="tile"></span>
+              </div>
+            </div>
+            <div class="screen two">
+              <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="screen-body">
+                <span class="bar" style="width: 60%"></span>
+                <span class="tile"></span>
+                <span class="line"></span>
+                <span class="line" style="width: 50%"></span>
+              </div>
+            </div>
+            <div class="screen three">
+              <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="screen-body">
+                <span class="bar" style="width: 55%"></span>
+                <span class="line"></span>
+                <span class="tile" style="min-height: 56px"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mock-card">
+        <div class="mock-header">
+          <div>
+            <span class="tag">Challenge image</span>
+            <h2>Show fragmentation without making it messy</h2>
+          </div>
+          <p>
+            Use cropped slices of the old products. Keep them blurred or
+            abstract enough to avoid exposing sensitive data, but varied enough
+            to show inconsistency.
+          </p>
+        </div>
+        <div class="inconsistency-grid">
+          <article class="mini-product">
+            <div class="mini-frame">
+              <span class="bar"></span>
+              <span class="line" style="display:block; margin-top:22px"></span>
+              <span class="tile" style="display:block; margin-top:16px"></span>
+            </div>
+            <p class="caption">Product A: different navigation model</p>
+          </article>
+          <article class="mini-product">
+            <div class="mini-frame alt">
+              <span class="bar"></span>
+              <span class="tile" style="display:block; margin-top:20px"></span>
+              <span class="line" style="display:block; margin-top:18px"></span>
+            </div>
+            <p class="caption">Product B: different page structure</p>
+          </article>
+          <article class="mini-product">
+            <div class="mini-frame dark">
+              <span class="line" style="display:block; background:rgba(255,255,255,.26)"></span>
+              <span class="line" style="display:block; margin-top:14px; background:rgba(255,255,255,.18)"></span>
+              <span class="tile" style="display:block; margin-top:18px; background:rgba(255,255,255,.14)"></span>
+            </div>
+            <p class="caption">Product C: different visual language</p>
+          </article>
+          <article class="mini-product">
+            <div class="mini-frame">
+              <span class="tile" style="display:block"></span>
+              <span class="tile" style="display:block; margin-top:16px"></span>
+            </div>
+            <p class="caption">Product D: repeated patterns rebuilt differently</p>
+          </article>
+          <article class="mini-product">
+            <div class="mini-frame alt">
+              <span class="bar" style="display:block; width:70%"></span>
+              <span class="line" style="display:block; margin-top:18px"></span>
+              <span class="line" style="display:block; width:55%; margin-top:12px"></span>
+              <span class="tile" style="display:block; margin-top:18px"></span>
+            </div>
+            <p class="caption">Product E: different form behavior</p>
+          </article>
+          <article class="mini-product">
+            <div class="mini-frame">
+              <span class="bar" style="display:block; width:48%"></span>
+              <span class="tile" style="display:block; margin-top:20px"></span>
+              <span class="tile" style="display:block; margin-top:12px; min-height:48px"></span>
+            </div>
+            <p class="caption">Product F: inconsistent hierarchy</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mock-card light">
+        <div class="mock-header">
+          <div>
+            <span class="tag">Design system image</span>
+            <h2>Make the system feel like real product infrastructure</h2>
+          </div>
+          <p>
+            Show tokens, components, and implementation-ready pieces together.
+            This can be a Figma export, Storybook screenshot, or a composed
+            system board.
+          </p>
+        </div>
+        <div class="component-wall">
+          <div class="component-panel">
+            <p class="eyebrow">Shared tokens</p>
+            <div class="tokens">
+              <div class="token"><span class="swatch" style="background:#003c47"></span><span>Brand / primary</span></div>
+              <div class="token"><span class="swatch" style="background:#e1ffc1"></span><span>Accent / success</span></div>
+              <div class="token"><span class="swatch" style="background:#f8f8f8"></span><span>Surface / page</span></div>
+              <div class="token"><span class="swatch" style="background:#cdd6da"></span><span>Border / disabled</span></div>
+              <div class="token"><span class="swatch" style="background:#000f2c"></span><span>Deep contrast</span></div>
+            </div>
+          </div>
+          <div class="component-panel">
+            <p class="eyebrow">Reusable components</p>
+            <div class="components">
+              <div class="component button">Button</div>
+              <div class="component">Input</div>
+              <div class="component">Select</div>
+              <div class="component">Table</div>
+              <div class="component">Tabs</div>
+              <div class="component">Modal</div>
+              <div class="component">Toast</div>
+              <div class="component">Card</div>
+              <div class="component">Status</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mock-card">
+        <div class="mock-header">
+          <div>
+            <span class="tag">Proof through products</span>
+            <h2>Use two before/after cards, not a random screenshot dump</h2>
+          </div>
+          <p>
+            This layout shows that the system became real through Translation
+            Portal and Interpreter Portal.
+          </p>
+        </div>
+        <div class="proof-grid">
+          <article class="proof-card">
+            <span class="tag">Translation Portal</span>
+            <div class="before-after">
+              <div class="screen">
+                <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div class="screen-body"><span class="bar"></span><span class="line"></span><span class="tile"></span><span class="line"></span></div>
+              </div>
+              <div class="screen">
+                <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div class="screen-body"><span class="bar" style="width:68%"></span><span class="tile"></span><span class="tile"></span></div>
+              </div>
+            </div>
+          </article>
+          <article class="proof-card">
+            <span class="tag">Interpreter Portal</span>
+            <div class="before-after">
+              <div class="screen">
+                <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div class="screen-body"><span class="bar"></span><span class="tile"></span><span class="line"></span><span class="line"></span></div>
+              </div>
+              <div class="screen">
+                <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <div class="screen-body"><span class="bar" style="width:72%"></span><span class="tile"></span><span class="tile"></span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mock-card">
+        <div class="mock-header">
+          <div>
+            <span class="tag">Future platform image</span>
+            <h2>Show the platform shell plus the service model</h2>
+          </div>
+          <p>
+            This could replace the large final placeholder. It explains that
+            one platform does not mean one giant product.
+          </p>
+        </div>
+        <div class="platform-shell">
+          <div class="nav-shell">
+            <div class="screen-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+            <div class="nav-body">
+              <aside class="sidebar">
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+              </aside>
+              <div class="canvas">
+                <span class="bar" style="width:62%"></span>
+                <span class="tile"></span>
+                <span class="tile"></span>
+                <span class="line"></span>
+                <span class="line" style="width:52%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="architecture-map">
+            <div class="arch-row">
+              <div class="arch-label">Shared services</div>
+              <div class="arch-boxes">
+                <div class="arch-box">Organizations</div>
+                <div class="arch-box">Users</div>
+                <div class="arch-box">Access</div>
+              </div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-label">Product layers</div>
+              <div class="arch-boxes">
+                <div class="arch-box">Translation</div>
+                <div class="arch-box">Interpreter</div>
+                <div class="arch-box">Scheduling</div>
+              </div>
+            </div>
+            <div class="arch-row">
+              <div class="arch-label">Experience</div>
+              <div class="arch-boxes">
+                <div class="arch-box">Navigation</div>
+                <div class="arch-box">Patterns</div>
+                <div class="arch-box">Design system</div>
+              </div>
+            </div>
+            <div class="notes">
+              <h3>Composition tip</h3>
+              <p>
+                Put the product shell on the left and the system model on the
+                right. It makes the strategy feel tangible instead of abstract.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

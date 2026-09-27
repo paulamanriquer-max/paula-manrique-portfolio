@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Propio Platform Strategy | Paula Manrique</title>
+    <meta
+      name="description"
+      content="A product design case study about creating the design system, product architecture, and UX strategy to move Propio from fragmented products toward a scalable platform."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400..700,70&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="../../assets/favicon.png" />
+    <link rel="stylesheet" href="../../styles.css?v=web-optimized-assets" />
+  </head>
+  <body class="project-detail platform-detail">
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Paula Manrique home">
+        <img class="brand-logo" src="../../assets/paula-wordmark.svg" alt="Paula Manrique" />
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/in/paulamanriquer/" target="_blank" rel="noreferrer" aria-label="Paula Manrique on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28ZM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.03H3.54V8.99H7.1v11.46ZM22.22 0H1.77C.8 0 0 .77 0 1.72v20.55C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z" />
+        </svg>
+      </a>
+    </header>
+
+    <main>
+      <nav class="project-nav" aria-label="Project navigation">
+        <a href="../../index.html#selected-work">← Back to selected work</a>
+      </nav>
+
+      <section class="case-hero">
+        <img
+          src="../../assets/projects/propio-platform-hero-web.webp"
+          alt="Propio platform concept showing Translation Portal, Interpreter Portal, and the unified workspace"
+        />
+      </section>
+
+      <section class="case-content case-intro" aria-labelledby="case-title">
+        <p class="meta">
+          <span>Platform Strategy</span><span>Design Systems</span><span>UX Leadership</span>
+        </p>
+        <h1 id="case-title">From fragmented products to a scalable platform</h1>
+        <p class="case-lede">
+          Creating the design system, product architecture, and UX strategy to
+          bring six enterprise products into one connected Propio ecosystem.
+        </p>
+        <dl class="quick-stats">
+          <div>
+            <dt>Role</dt>
+            <dd>Lead product designer</dd>
+          </div>
+          <div>
+            <dt>Scope</dt>
+            <dd>Platform strategy, design systems, product architecture</dd>
+          </div>
+          <div>
+            <dt>Products</dt>
+            <dd>Propio One, Translation, Interpreter, Scheduling, Analytics, Echo</dd>
+          </div>
+          <div>
+            <dt>Company</dt>
+            <dd>Propio</dd>
+          </div>
+        </dl>
+
+        <section class="case-section">
+          <p class="case-kicker">The Challenge</p>
+          <p>
+            Propio’s products had grown independently over time. Each product
+            had its own UI patterns, components, navigation, and approach to
+            users and access. Similar experiences were designed and built
+            differently across products, and sometimes within the same product.
+          </p>
+          <p>
+            As major redesigns began, the work revealed a bigger platform
+            problem: improving individual products would not be enough. Propio
+            needed a shared foundation that could make each product feel
+            connected without forcing every workflow into the same mold.
+          </p>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Scaling the System</p>
+          <p>
+            The first design system solved the immediate web product need, but
+            I knew it would eventually need to support a broader ecosystem.
+            Tokens were embedded inside the web library, which worked until the
+            system needed to expand into mobile.
+          </p>
+          <p>
+            As the design team grew, we separated primitive and semantic tokens
+            into a shared foundation, moved assets into their own library, and
+            allowed web and mobile libraries to use the same underlying design
+            language.
+          </p>
+          <div class="platform-diagram token-diagram" aria-label="Design system architecture diagram">
+            <div>
+              <p>V1</p>
+              <h2>Web Design System</h2>
+              <span>Tokens</span>
+              <span>Assets</span>
+              <span>Components</span>
+            </div>
+            <strong>→</strong>
+            <div>
+              <p>V2</p>
+              <h2>Shared Foundation</h2>
+              <span>Primitive + semantic tokens</span>
+              <span>Shared assets</span>
+              <span>Web + mobile libraries</span>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="platform-decision-showcase" aria-labelledby="foundation-first-title">
+        <p class="platform-showcase-pill">Foundation First</p>
+        <article class="decision-card platform-showcase-decision">
+          <div class="decision-copy">
+            <p class="step">Decision 01</p>
+            <h2 id="foundation-first-title">Start with the system, not the screens</h2>
+            <p>
+              The design strategy was to solve the foundation first, then let
+              product screens inherit the same patterns. I built the web design
+              system alongside active product work, reducing design and
+              engineering debt while teams continued shipping.
+            </p>
+          </div>
+          <figure class="artifact-image">
+            <div class="platform-system-collage" aria-label="Propio design system showing Figma tokens, component documentation, and Storybook implementation">
+              <span class="platform-collage-item">
+                <img
+                  src="../../assets/projects/propio-platform/design-tokens.webp"
+                  alt="Propio design system tokens in Figma"
+                />
+              </span>
+              <span class="platform-collage-item">
+                <img
+                  src="../../assets/projects/propio-platform/design-documentation.webp"
+                  alt="Propio design system button documentation"
+                />
+              </span>
+              <span class="platform-collage-item">
+                <img
+                  src="../../assets/projects/propio-platform/design-storybook.webp"
+                  alt="Propio Storybook implementation for button components"
+                />
+              </span>
+            </div>
+          </figure>
+        </article>
+
+        <article class="decision-card platform-showcase-decision">
+          <div class="decision-copy">
+            <p class="step">Decision 02</p>
+            <h2>Create one entry point for the ecosystem</h2>
+            <p>
+              Part of the MegaApp strategy was standardizing access. Instead
+              of asking users to remember a different URL for every product, I
+              designed a single login experience with SSO and a shared product
+              App Switcher. After signing in, users could eventually navigate
+              to the different apps they had access to from one consistent
+              place.
+            </p>
+          </div>
+          <figure class="artifact-image">
+            <img
+              src="../../assets/projects/propio-platform/unified-login-app-switcher.webp"
+              alt="Propio unified login and product switcher concept showing one entry point with SSO and access to multiple applications"
+            />
+          </figure>
+        </article>
+      </section>
+
+      <section class="feature-band platform-band" aria-label="Platform foundation outcomes">
+        <div class="feature-grid four-up">
+          <article class="platform-metric">
+            <h2>30+</h2>
+            <p>Foundational components</p>
+          </article>
+          <article class="platform-metric">
+            <h2>~30%</h2>
+            <p>Faster engineering delivery</p>
+          </article>
+          <article class="platform-metric">
+            <h2>6</h2>
+            <p>Products moving toward one experience</p>
+          </article>
+          <article class="platform-metric">
+            <h2>Web + Mobile</h2>
+            <p>Systems built from shared tokens</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="platform-fragmented-section">
+        <div class="platform-fragmented-inner">
+          <p class="case-kicker">The fragmentation went beyond two applications</p>
+          <p>
+            The need for a shared system became clearer when looking across the
+            wider product ecosystem. Each application had evolved independently,
+            with its own navigation, components, and interaction patterns. To
+            create a connected experience, we needed to move beyond one-off
+            redesigns and establish a system that could scale across the entire
+            platform.
+          </p>
+          <div class="platform-fragmented-gallery" aria-label="Additional legacy Propio product examples">
+            <article>
+              <figure>
+                <img
+                  src="../../assets/projects/propio-platform/old-propio-one.webp"
+                  alt="Legacy Propio One screen with left navigation and mixed table patterns"
+                />
+              </figure>
+              <h3>Propio One</h3>
+              <p>
+                A different navigation structure, component library, and
+                information hierarchy created its own distinct product
+                experience.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="../../assets/projects/propio-platform/old-wfos.webp"
+                  alt="Legacy workforce operations screen with dense job table and multiple controls"
+                />
+              </figure>
+              <h3>WFOS</h3>
+              <p>
+                A legacy, data-heavy interface relied on dense workflows and
+                patterns unique to scheduling.
+              </p>
+            </article>
+            <article>
+              <figure>
+                <img
+                  src="../../assets/projects/propio-platform/old-analytics.webp"
+                  alt="Legacy Propio Analytics screen with outdated visual language and navigation"
+                />
+              </figure>
+              <h3>Analytics</h3>
+              <p>
+                An outdated visual language and navigation model introduced yet
+                another set of patterns across the platform.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-content">
+        <section class="case-section">
+          <p class="case-kicker">Proof Through Products</p>
+          <p>
+            Translation Portal and Interpreter Portal became the clearest proof
+            points for the platform direction. Each product served a different
+            workflow, but the redesigns showed they could share navigation,
+            components, interaction patterns, and visual language without losing
+            what made each product specific.
+          </p>
+          <div class="decision-stack platform-before-after-stack">
+            <article class="decision-card">
+              <div class="artifact-image tabbed-artifact platform-tabbed-artifact">
+                <input type="radio" name="translation-comparison-tabs" id="translation-before-tab" checked />
+                <input type="radio" name="translation-comparison-tabs" id="translation-after-tab" />
+                <div class="artifact-tabs" aria-label="Translation Portal before and after tabs">
+                  <label for="translation-before-tab">Before</label>
+                  <label for="translation-after-tab">After</label>
+                </div>
+                <figure class="tabbed-panel translation-before-panel">
+                  <img
+                    src="../../assets/projects/propio-platform/translation-before.webp"
+                    alt="Translation Portal before redesign"
+                  />
+                </figure>
+                <figure class="tabbed-panel translation-after-panel">
+                  <img
+                    src="../../assets/projects/propio-platform/translation-after.webp"
+                    alt="Translation Portal after redesign"
+                  />
+                </figure>
+              </div>
+              <div class="decision-copy">
+                <p class="step">Before / after</p>
+                <h2>Translation Portal</h2>
+                <p>
+                  The legacy Translation Portal relied on dense tables,
+                  inconsistent controls, and product-specific navigation. The
+                  redesign introduced shared navigation, reusable components,
+                  and interaction patterns that simplified complex translation
+                  workflows and helped establish the foundation for the unified
+                  platform.
+                </p>
+              </div>
+            </article>
+            <article class="decision-card">
+              <div class="artifact-image tabbed-artifact platform-tabbed-artifact">
+                <input type="radio" name="interpreter-comparison-tabs" id="interpreter-before-tab" checked />
+                <input type="radio" name="interpreter-comparison-tabs" id="interpreter-after-tab" />
+                <div class="artifact-tabs" aria-label="Interpreter Portal before and after tabs">
+                  <label for="interpreter-before-tab">Before</label>
+                  <label for="interpreter-after-tab">After</label>
+                </div>
+                <figure class="tabbed-panel interpreter-before-panel">
+                  <img
+                    src="../../assets/projects/propio-platform/interpreter-before.webp"
+                    alt="Interpreter Portal before redesign"
+                  />
+                </figure>
+                <figure class="tabbed-panel interpreter-after-panel">
+                  <img
+                    src="../../assets/projects/propio-platform/interpreter-after.webp"
+                    alt="Interpreter Portal after redesign"
+                  />
+                </figure>
+              </div>
+              <div class="decision-copy">
+                <p class="step">Before / after</p>
+                <h2>Interpreter Portal</h2>
+                <p>
+                  The legacy Interpreter Portal had its own navigation, visual
+                  language, and page structure. The redesign brought it into the
+                  shared product system with consistent navigation and
+                  components, while preserving the workflows, status, and
+                  performance information unique to interpreters.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="case-content">
+        <section class="case-section">
+          <p class="case-kicker">Beyond Consistency</p>
+          <p>
+            Making products look consistent was not enough. A unified platform
+            needed a shared way to think about organizations, users, product
+            access, roles, and permissions. Without that model, each product
+            would continue to define users differently.
+          </p>
+          <div class="challenge-grid platform-principle-grid">
+            <article>
+              <p class="step">01</p>
+              <h2>One identity across the ecosystem</h2>
+              <p>A user should not need to exist independently within every product.</p>
+            </article>
+            <article>
+              <p class="step">02</p>
+              <h2>Access before roles</h2>
+              <p>First determine which products a user can access, then what they can do.</p>
+            </article>
+            <article>
+              <p class="step">03</p>
+              <h2>Product-specific roles where needed</h2>
+              <p>Responsibilities in Translation may be different from Scheduling or Analytics.</p>
+            </article>
+          </div>
+          <div class="role-permission-story" aria-label="Example user access and authorization model">
+            <div class="role-person-card">
+              <h2>Maria Gomez</h2>
+              <div class="role-person-meta">
+                <p class="step">Example user</p>
+                <p>External client at Mercy Hospital, Emergency Department</p>
+              </div>
+            </div>
+            <div class="role-access-path" aria-label="User access model flow">
+              <span>Organization</span>
+              <span>User</span>
+              <span>Product access</span>
+              <span>Product role</span>
+              <span>Permissions</span>
+            </div>
+            <div class="role-product-grid">
+              <article>
+                <p class="step">Product access</p>
+                <h3>Translation</h3>
+                <dl>
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Manager</dd>
+                  </div>
+                  <div>
+                    <dt>Can do</dt>
+                    <dd>Create orders, edit orders, assign linguists</dd>
+                  </div>
+                </dl>
+              </article>
+              <article>
+                <p class="step">Product access</p>
+                <h3>Analytics</h3>
+                <dl>
+                  <div>
+                    <dt>Role</dt>
+                    <dd>Viewer</dd>
+                  </div>
+                  <div>
+                    <dt>Can do</dt>
+                    <dd>View dashboards, view reports, export reports</dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">The Path Forward</p>
+          <p>
+            Bringing six applications into one ecosystem at once was not
+            realistic. I created a two-phase strategy that let teams keep
+            shipping while moving toward the same platform direction.
+          </p>
+          <div class="platform-roadmap">
+            <article>
+              <p>Today</p>
+              <h2>Independent products</h2>
+              <span>Different experiences</span>
+              <span>Different architecture</span>
+            </article>
+            <article>
+              <p>Phase 1</p>
+              <h2>Standardize</h2>
+              <span>Shared design system</span>
+              <span>Shared patterns</span>
+              <span>Shared platform services</span>
+            </article>
+            <article>
+              <p>Phase 2</p>
+              <h2>Unify</h2>
+              <span>One platform</span>
+              <span>One workspace</span>
+              <span>Multiple products</span>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="feature-band platform-shell-band" aria-label="Future platform vision">
+        <div class="platform-shell-copy">
+          <p class="feature-kicker">Future State</p>
+          <h2>One platform does not mean one giant product</h2>
+          <p>
+            The platform should own shared services like organizations, users,
+            roles, authentication, notifications, search, settings, help, and
+            app switching. Products should keep the specialized workflows and
+            business logic that make them valuable.
+          </p>
+        </div>
+        <div class="platform-image-frame platform-shell-image">
+          <img
+            src="../../assets/projects/propio-platform/future-workspace-icons.webp"
+            alt="Unified Propio workspace with application cards and Propio language services platform icons"
+          />
+        </div>
+      </section>
+
+      <section class="case-content case-bottom">
+        <section class="case-section">
+          <p class="case-kicker">Leadership Outcome</p>
+          <p>
+            I started this transformation as Propio’s first product designer.
+            Today, the platform direction is scaling through the design team. I
+            lead two product designers who are redesigning WFOS and the mobile
+            Interpreter app while extending the web and mobile design libraries.
+          </p>
+          <p>
+            I continue to supervise the work, helping ensure each experience
+            reuses shared patterns, stays aligned to the broader UX vision, and
+            still makes room for the nuances of each product’s users, workflows,
+            and goals.
+          </p>
+          <div class="platform-evolution">
+            <article>
+              <p>Started with</p>
+              <h2>1 designer</h2>
+              <span>30+ components</span>
+              <span>Web foundation</span>
+              <span>2 major redesigns</span>
+            </article>
+            <article>
+              <p>Scaled to</p>
+              <h2>Design team</h2>
+              <span>Web + mobile systems</span>
+              <span>Shared tokens</span>
+              <span>Common platform direction</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Where We Are Today</p>
+          <div class="outcomes-grid">
+            <article>
+              <h2>2</h2>
+              <p>Major product redesigns in implementation.</p>
+            </article>
+            <article>
+              <h2>6</h2>
+              <p>Products aligned to one platform direction.</p>
+            </article>
+            <article>
+              <h2>2 designers</h2>
+              <p>Helping scale the system and product vision.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <p class="case-kicker">Reflection</p>
+          <p>
+            What started as a design system initiative became a broader
+            transformation of how Propio approaches its product ecosystem. I did
+            not set out to make six products simply look more consistent. I
+            created the foundation for them to eventually work as one platform.
+            That shared foundation reduced duplicated design decisions across
+            product teams and helped accelerate redesign work across web and
+            mobile.
+          </p>
+        </section>
+
+        <section class="interest-card">
+          <h2>Interested in this project?</h2>
+          <p>I’m happy to walk through the strategy, system architecture, and product decisions behind the work.</p>
+          <a href="mailto:paulamanriquer@gmail.com?subject=Portfolio%20inquiry">Contact me</a>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img class="footer-mark" src="../../assets/paula-mark-footer.png" alt="" />
+      <p>2026 Paula Manrique. All rights reserved</p>
+    </footer>
+    <script src="../../case-lightbox.js" defer></script>
+  </body>
+</html>
